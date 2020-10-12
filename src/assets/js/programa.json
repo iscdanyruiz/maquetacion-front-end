@@ -1,0 +1,114 @@
+ {
+   "nombre": "Fundamentos del diseño",
+   "leccion": [{
+       "leccion": "Bienvenida",
+       "curso": [{
+           "nombre": "Bienvenida al curso",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Que esperar del curso",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Conoce a los maestros",
+           "duracion": 45,
+           "status": "sin reproducir"
+         }
+       ]
+     },
+     {
+       "leccion": "Elementos básicos",
+       "curso": [{
+           "nombre": "El punto",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "La linea",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Las formas",
+           "duracion": 45,
+           "status": "sin reproducir"
+         },
+         {
+           "nombre": "Los objetos",
+           "duracion": 45,
+           "status": "sin reproducir"
+         }
+       ]
+     },
+     {
+       "leccion": "Composición y Gestalt",
+       "curso": [{
+           "nombre": "Disposición y composición",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Proximidad",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Espacio en blanco",
+           "duracion": 45,
+           "status": "sin reproducir"
+         },
+         {
+           "nombre": "Alineación",
+           "duracion": 45,
+           "status": "sin reproducir"
+         }
+       ]
+     },
+     {
+       "leccion": "Teoría del color",
+       "curso": [{
+           "nombre": "Círculo cromático",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Tonalidad",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Saturación",
+           "duracion": 45,
+           "status": "sin reproducir"
+         },
+         {
+           "nombre": "Brillo",
+           "duracion": 45,
+           "status": "sin reproducir"
+         }
+       ]
+     },
+     {
+       "leccion": "Combinación del color",
+       "curso": [{
+           "nombre": "Contraste",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Legilibilidad",
+           "duracion": 45,
+           "status": "reproducido"
+         },
+         {
+           "nombre": "Mensaje",
+           "duracion": 45,
+           "status": "sin reproducir"
+         }
+       ]
+     }
+   ]
+ }

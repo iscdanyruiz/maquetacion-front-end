@@ -1,1 +1,667 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;600;700&display=swap');
+
+/*BARRA DE MENU*/
+.navbar {
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.37);
+}
+
+.navbar-nav {
+  margin: 0 auto !important;
+}
+
+form.user {
+  transform: translatex(-25%);
+}
+
+.navbar-light .navbar-nav .nav-link,
+.terminos {
+  color: #000;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 300;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #bf206b;
+  font-weight: bold;
+}
+
+/*IMAGEN CURSO*/
+.imgCurso {
+  background-attachment: fixed;
+  background-image: url("assets/images/curso01.png");
+  background-position-y: -65%;
+  background-repeat: no-repeat;
+  background-size: 64% 116%;
+}
+
+/*SUTITULO*/
+.subtitulo {
+  border-bottom: 8px solid #57266d;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+/*CLASIFICACION*/
+.clasificacion {
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.37);
+  background-color: #FFF;
+  position: relative;
+}
+
+.clasificacion .multinivel:after,
+.clasificacion .multinivel:before,
+.multinivel.inicial:before {
+  background: #57266d;
+  content: '';
+  height: 100%;
+  left: -5px;
+  position: absolute;
+  top: 0;
+  width: 12%;
+}
+
+.multinivel.inicial:before {
+  left: -8%;
+}
+
+.clasificacion .multinivel:before {
+  background: #FFF;
+  left: -10%;
+  width: 5%;
+}
+
+/*ACORDION*/
+.mat-accordion .mat-expansion-panel:not(.mat-expanded),
+.mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing),
+.playCurso {
+  border-radius: 50px !important;
+}
+
+.redes .playCurso svg,
+.contacto .playCurso svg {
+  font-size: 2em;
+}
+
+.mat-accordion>.mat-expansion-panel-spacing:last-child,
+.mat-accordion>*:last-child:not(.mat-expansion-panel) .mat-expansion-panel-spacing .mat-expansion-indicator::after {
+  border-radius: 10px !important;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+
+.mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]),
+.mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]),
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+  background-color: #FFF;
+}
+
+.mat-expansion-panel-header {
+  padding-left: 15px !important;
+  height: 35px !important;
+}
+
+.mat-expansion-panel .mat-typography {
+  max-height: 35px !important;
+}
+
+.mat-form-field+.mat-form-field {
+  margin-left: 8px;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.18);
+}
+
+/*ACORDION CONTROLES*/
+
+.playCurso {
+  display: inline-block;
+  text-align: center;
+}
+
+.playCurso.status {
+  font-size: 0.75em;
+  line-height: 2;
+}
+
+.cursos .visto {
+  border-radius: 50px;
+  color: #FFF;
+  content: '';
+  font-family: "Font Awesome 5 Free";
+  height: 25px;
+  left: 99%;
+  position: absolute;
+  top: 14%;
+  width: 25px;
+}
+
+/*FOOTER*/
+.footer {
+  -webkit-box-shadow: -1px -4px 12px -4px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px -4px 12px -4px rgba(0, 0, 0, 0.37);
+  box-shadow: -1px -4px 12px -4px rgba(0, 0, 0, 0.37);
+}
+
+.footer .contenedor {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.footer .terminos {
+  font-size: 0.85em;
+}
+
+.footer .playCurso i {
+  color: #FFF;
+  font-size: 1.5em;
+  line-height: 30px;
+  min-height: 29px;
+  min-width: 29px;
+}
+
+.footer .input-group {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.footer .input-group>.custom-file,
+.footer .input-group>.custom-select,
+.footer .input-group>.form-control,
+.footer .input-group>.form-control-plaintext {
+  border-radius: 50px 0 0 50px;
+  font-size: 0.75em;
+}
+
+.footer .input-group>.input-group-append>.btn,
+.footer .input-group>.input-group-append>.input-group-text,
+.footer .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+.footer .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+.footer .input-group>.input-group-prepend:not(:first-child)>.btn,
+.footer .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+  border-radius: 50px 50px 50px 50px;
+  font-size: 0.75em;
+  min-width: 90px;
+  transform: translateX(-20%);
+}
+
+.newsletter {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+/*IPAD*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .navbar-light .navbar-nav .nav-link,
+  .terminos {
+    font-size: 0.85em;
+  }
+
+  .imgCurso {
+    background-size: 64% 116%;
+  }
+
+  .playCurso {
+    padding: .21rem !important;
+  }
+
+  .multinivel.clase,
+  .duracion {
+    font-size: 0.85em;
+  }
+
+  .footer .terminos {
+    font-size: 0.65em;
+    padding-top: 0 !important;
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+  /*NAVBAR*/
+  .navbar-light .navbar-brand>img.w-50,
+  .navbar-light .navbar-brand.ml-5 {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  form.user {
+    margin-right: 0 !important;
+    min-width: 120px;
+    transform: translatex(0);
+  }
+
+  .cursoPlay {
+    padding: 0 !important;
+  }
+
+  .multinivel.clase,
+  .duracion {
+    padding-left: 15px !important;
+  }
+
+  .multinivel.inicial {
+    font-size: 0.85em;
+  }
+
+  /*FOOTER*/
+  .footer .input-group>.input-group-append>.btn,
+  .footer .input-group>.input-group-append>.input-group-text,
+  .footer .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+  .footer .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+  .footer .input-group>.input-group-prepend:not(:first-child)>.btn,
+  .footer .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    transform: translateX(5%);
+  }
+
+  .footer .playCurso {
+    padding: .01rem !important;
+  }
+
+  .footer .playCurso i {
+    font-size: 0.85em;
+    min-height: 25px;
+    min-width: 25px;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+  .navbar-light .navbar-nav .nav-link,
+  .terminos {
+    font-size: 0.85em;
+  }
+
+  .imgCurso {
+    background-size: 64% 116%;
+  }
+
+  .playCurso {
+    padding: .21rem !important;
+  }
+
+  .footer .terminos {
+    font-size: 0.65em;
+    padding-top: 0 !important;
+  }
+}
+
+/*XIAOMI*/
+
+@media only screen and (max-width : 1020px) and (max-height : 812px) {
+
+  /*MENU*/
+  nav#menu>a,
+  nav#menu {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 15px !important;
+  }
+
+  form.user {
+    transform: translateX(7%);
+  }
+
+
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: transparent;
+  }
+
+  .navbar-light .navbar-toggler:focus {
+    outline-color: transparent;
+  }
+
+  /*FOOTER*/
+  div#footer:before {
+    background: white;
+    content: '';
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .logotipof {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+
+  .redes {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .redes .playCurso,
+  .contacto .playCurso {
+    font-size: 1.5em;
+    margin: 10px 15px;
+  }
+
+  .newsletter,
+  .boletin,
+  .footer .input-group {
+    font-size: 1em;
+  }
+
+  .newsletter {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer .input-group>.custom-file,
+  .footer .input-group>.custom-select,
+  .footer .input-group>.form-control,
+  .footer .input-group>.form-control-plaintext,
+  .footer .input-group>.input-group-append>.btn,
+  .footer .input-group>.input-group-append>.input-group-text,
+  .footer .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+  .footer .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+  .footer .input-group>.input-group-prepend:not(:first-child)>.btn,
+  .footer .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    font-size: 1em;
+  }
+
+  .footer .input-group>.input-group-append>.btn,
+  .footer .input-group>.input-group-append>.input-group-text,
+  .footer .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+  .footer .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+  .footer .input-group>.input-group-prepend:not(:first-child)>.btn,
+  .footer .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    transform: translateX(-10%);
+  }
+
+  .boletin {
+    padding-top: 20px;
+  }
+
+  /*PROGRAMA*/
+
+  #contenido {
+    background-attachment: fixed;
+    background-image: url("assets/images/curso01_no_add.png");
+    background-position: 37% 13%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0 !important;
+  }
+
+  .programa {
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    margin-left: 5% !important;
+    margin-top: 30%;
+    padding-bottom: 15px !important;
+    text-align: center;
+    width: 90%;
+  }
+
+  .cursos .programa {
+    margin-top: 8% !important;
+  }
+
+  .cursos .visto {
+    display: none;
+  }
+
+  .clasificacion {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .multinivel.clase,
+  .duracion {
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 18px 25px !important;
+    width: 50%;
+  }
+
+  .clasificacion .multinivel:after {
+    left: 0;
+    width: 10%;
+  }
+
+  .clasificacion .multinivel:before,
+  .multinivel.inicial:before {
+    display: none;
+  }
+
+  .cursos {
+    padding: 0 !important;
+    position: relative;
+  }
+
+
+  .cursoPlay {
+    padding: 0 5px 0 0;
+    width: calc(30% - 30px);
+  }
+
+  .cursoNombre {
+    padding: 0;
+    width: calc(70% - 5px);
+  }
+
+  .item {
+    left: 83%;
+    position: absolute;
+  }
+
+  .imgCurso {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+  /*MENU*/
+  nav#menu>a,
+  nav#menu {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 15px !important;
+  }
+
+  form.user {
+    transform: translateX(7%);
+  }
+
+
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: transparent;
+  }
+
+  .navbar-light .navbar-toggler:focus {
+    outline-color: transparent;
+  }
+
+  /*FOOTER*/
+  div#footer:before {
+    background: white;
+    content: '';
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .logotipof {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+
+  .redes {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .redes .playCurso,
+  .contacto .playCurso {
+    font-size: 1.5em;
+    margin: 10px 15px;
+  }
+
+  .newsletter,
+  .boletin,
+  .footer .input-group {
+    font-size: 1em;
+  }
+
+  .newsletter {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer .input-group>.custom-file,
+  .footer .input-group>.custom-select,
+  .footer .input-group>.form-control,
+  .footer .input-group>.form-control-plaintext,
+  .footer .input-group>.input-group-append>.btn,
+  .footer .input-group>.input-group-append>.input-group-text,
+  .footer .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+  .footer .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+  .footer .input-group>.input-group-prepend:not(:first-child)>.btn,
+  .footer .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    font-size: 1em;
+  }
+
+  .footer .input-group>.input-group-append>.btn,
+  .footer .input-group>.input-group-append>.input-group-text,
+  .footer .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+  .footer .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+  .footer .input-group>.input-group-prepend:not(:first-child)>.btn,
+  .footer .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    transform: translateX(-10%);
+  }
+
+  .boletin {
+    padding-top: 20px;
+  }
+
+  /*PROGRAMA*/
+
+  #contenido {
+    background-attachment: fixed;
+    background-image: url("assets/images/curso01_no_add.png");
+    background-position: 37% 13%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0 !important;
+  }
+
+  .programa {
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    margin-left: 5% !important;
+    margin-top: 30%;
+    padding-bottom: 15px !important;
+    text-align: center;
+    width: 90%;
+  }
+
+  .cursos .programa {
+    margin-top: 8% !important;
+  }
+
+  .cursos .visto {
+    display: none;
+  }
+
+  .clasificacion {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .multinivel.clase,
+  .duracion {
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 18px 25px !important;
+    width: 50%;
+  }
+
+  .clasificacion .multinivel:after {
+    left: 0;
+    width: 10%;
+  }
+
+  .clasificacion .multinivel:before,
+  .multinivel.inicial:before {
+    display: none;
+  }
+
+  .cursos {
+    padding: 0 !important;
+    position: relative;
+  }
+
+
+  .cursoPlay {
+    padding: 0 5px 0 0;
+    width: calc(30% - 30px);
+  }
+
+  .cursoNombre {
+    padding: 0;
+    width: calc(70% - 5px);
+  }
+
+  .item {
+    left: 83%;
+    position: absolute;
+  }
+
+  .imgCurso {
+    display: none;
+  }
+}
